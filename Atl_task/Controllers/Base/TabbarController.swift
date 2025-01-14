@@ -45,16 +45,16 @@ final class TabbarController: UITabBarController {
         tabBar.layer.masksToBounds = true
         
         
-    let homeController = UIViewController()
-    let calendarController = UIViewController()
-    let searchController = UIViewController()
-    let chatController = UIViewController()
+    let homeController = OverviewController()
+    let calendarController = ProgressController()
+    let searchController = SessionController()
+    let chatController = SettingsController()
         
         
-    let homeNavigation = UINavigationController(rootViewController: homeController)
-    let calendarNavigation = UINavigationController(rootViewController: calendarController)
-    let searchNavigation = UINavigationController(rootViewController: searchController)
-    let chatNavigation = UINavigationController(rootViewController: chatController)
+    let homeNavigation = NavBarController(rootViewController: homeController)
+    let calendarNavigation = NavBarController(rootViewController: calendarController)
+    let searchNavigation = NavBarController(rootViewController: searchController)
+    let chatNavigation = NavBarController(rootViewController: chatController)
         
         
         homeController.tabBarItem = UITabBarItem(

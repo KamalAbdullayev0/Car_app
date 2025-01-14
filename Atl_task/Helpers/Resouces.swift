@@ -14,6 +14,7 @@ enum Resources {
         static let inactive = UIColor(hexString: "#BDC3C7")
         static let background = UIColor(hexString: "#F9F9F9")
         static let separator = UIColor(hexString: "#E0E0E0")
+        static let titleGray = UIColor(hexString: "#545C77")
     }
     
     enum Strings {
@@ -33,5 +34,16 @@ enum Resources {
                 static var chat = UIImage(named: "Chat")
             }
         }
+    
+    enum Fonts {
+        static func helveticaRegular(width size: CGFloat) -> UIFont {
+            UIFont(name: "Helvetica", size: size) ?? UIFont()
+            
+             
+        }
+     
+//        static var title = UIFont.systemFont(ofSize: 16, weight: .semibold)
+//        static var subtitle = UIFont.systemFont(ofSize: 14, weight: .regular)
+    }
     
 }
