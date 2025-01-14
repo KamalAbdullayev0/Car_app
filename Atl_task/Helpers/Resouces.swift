@@ -15,6 +15,7 @@ enum Resources {
         static let background = UIColor(hexString: "#F9F9F9")
         static let separator = UIColor(hexString: "#E0E0E0")
         static let titleGray = UIColor(hexString: "#545C77")
+        static let secondary = UIColor(hexString: "#F0F3FF")
     }
     
     enum Strings {
@@ -25,6 +26,11 @@ enum Resources {
             static var chat = "Chat"
         }
         
+        enum Overview {
+            static var allWorkoutsButtonTitle = "All workouts"
+        }
+    
+        
     }
     enum Images {
             enum Tabbar{
@@ -32,6 +38,10 @@ enum Resources {
                 static var calendar = UIImage(named: "Calendar")
                 static var search = UIImage(named: "Search")
                 static var chat = UIImage(named: "Chat")
+            }
+        
+            enum Common {
+                static var downArrow = UIImage(named: "down_arrow")
             }
         }
     
